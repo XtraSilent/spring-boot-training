@@ -1,0 +1,159 @@
+_type: export
+__export_format: 4
+__export_date: 2022-09-05T07:31:39.553Z
+__export_source: insomnia.desktop.app:v2022.5.1
+resources:
+  - _id: req_631df176a87140b6aadcedd419bad766
+    parentId: fld_4e9dcf9767c44b088d3a4475a8cddfeb
+    modified: 1662362387166
+    created: 1662362264056
+    url: http://localhost:8080/api/v1/student/3
+    name: Update a student
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "ahmad albab",
+        	"dob": "1992-07-13",
+        	"email": "test123@example.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_229bf54807b14130bcd431743996cebc
+    authentication: {}
+    metaSortKey: -1662362264056
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_4e9dcf9767c44b088d3a4475a8cddfeb
+    parentId: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    modified: 1662353242530
+    created: 1662353242530
+    name: Spring boot training
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1662353242530
+    _type: request_group
+  - _id: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    parentId: null
+    modified: 1662353204322
+    created: 1662353204322
+    name: New Document
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_ac138ca7226c4e6ba16ca5ea84033d47
+    parentId: fld_4e9dcf9767c44b088d3a4475a8cddfeb
+    modified: 1662362290516
+    created: 1662361340085
+    url: http://localhost:8080/api/v1/student/3
+    name: Delete a student
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1662361340085
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7afb66e1a5a541d6b766bd80cf19c49a
+    parentId: fld_4e9dcf9767c44b088d3a4475a8cddfeb
+    modified: 1662362382026
+    created: 1662353288133
+    url: http://localhost:8080/api/v1/student
+    name: Create new student
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "ahmad",
+        	"dob": "1992-07-13",
+        	"email": "test1@example.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_733c0dc213ac485e8e977f07e499522d
+    authentication: {}
+    metaSortKey: -1662353223484
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6b90bf23fd984d698e08b3ec39009f4d
+    parentId: fld_4e9dcf9767c44b088d3a4475a8cddfeb
+    modified: 1662353285672
+    created: 1662353204338
+    url: http://localhost:8080/api/v1/student
+    name: Get all students
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1662353223434
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_09ab2d052446a7e756e3c5c0db9781559c68eda8
+    parentId: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    modified: 1662353204333
+    created: 1662353204333
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1662353204333
+    _type: environment
+  - _id: jar_09ab2d052446a7e756e3c5c0db9781559c68eda8
+    parentId: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    modified: 1662353204336
+    created: 1662353204336
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_c7cb429e2df444948a3e22304077f276
+    parentId: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    modified: 1662361323680
+    created: 1662353204330
+    fileName: New Document
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_6bc511f70e5a46f4af680c1bf5843824
+    parentId: wrk_dc1d281e5e7e49fda0f8a507d1bc6247
+    modified: 1662353204339
+    created: 1662353204339
+    name: Example Test Suite
+    _type: unit_test_suite
