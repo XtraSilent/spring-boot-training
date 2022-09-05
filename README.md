@@ -1,2 +1,3 @@
 # spring-boot-training
-Just for fun
+
+To test please refer training insomnia file.
